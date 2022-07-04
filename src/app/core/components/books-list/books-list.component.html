@@ -1,0 +1,6 @@
+<h1 class="text-center my-5">Todos os livros disponíveis</h1>
+<section class="d-flex justify-content-evenly flex-wrap">
+  <div class="d-flex justify-content-center mb-5 mx-2" *ngFor="let book of books" style="flex: 0 0 20%">
+    <app-book-card [pageType]="pageType" [book]="book"></app-book-card>
+  </div>
+</section>
